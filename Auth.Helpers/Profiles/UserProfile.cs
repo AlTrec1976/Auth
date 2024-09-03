@@ -1,7 +1,7 @@
 ﻿using Auth.Entities.Users;
 using AutoMapper;
 
-namespace Auth.BLL.Logic.Profiles
+namespace Auth.Helpers.Profiles
 {
     public class UserProfile : Profile
     {

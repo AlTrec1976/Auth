@@ -2,7 +2,7 @@
 using Auth.Entities.Roles;
 using AutoMapper;
 
-namespace Auth.BLL.Logic.Profiles
+namespace Auth.Helpers.Profiles
 {
     public class AdminProfile : Profile
     {
