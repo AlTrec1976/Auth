@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd ">
+
+    <include file="/Procedures/create_user.sql"/>
+    <include file="/Procedures/update_user.sql"/>
+    <include file="/Procedures/delete_user.sql"/>
+    <include file="/Procedures/create_permission.sql"/>
+    <include file="/Procedures/update_permission.sql"/>
+    <include file="/Procedures/delete_permission.sql"/>
+    <include file="/Procedures/create_role.sql"/>
+    <include file="/Procedures/update_role.sql"/>
+    <include file="/Procedures/delete_role.sql"/>
+    <include file="/Procedures/create_role_permission.sql"/>
+    <include file="/Procedures/delete_role_permission.sql"/>
+    <include file="/Procedures/create_user_role.sql"/>
+    <include file="/Procedures/delete_user_role.sql"/>
+
+</databaseChangeLog>

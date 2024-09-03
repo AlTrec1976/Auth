@@ -1,0 +1,13 @@
+CREATE OR REPLACE FUNCTION public.get_all_users(
+	)
+    RETURNS SETOF users
+    LANGUAGE 'plpgsql'
+    COST 100
+    VOLATILE PARALLEL UNSAFE
+    ROWS 1000
+
+AS $BODY$
+BEGIN
+RETURN QUERY SELECT * FROM users;
+END;
+$BODY$;

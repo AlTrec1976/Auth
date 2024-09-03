@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd ">
+
+    <include file="/Functions/get_user.sql"/>
+    <include file="/Functions/get_all_users.sql"/>
+    <include file="/Functions/check_user_login.sql"/>
+    <include file="/Functions/get_permission.sql"/>
+    <include file="/Functions/get_all_permissions.sql"/>
+    <include file="/Functions/get_all_roles.sql"/>
+    <include file="/Functions/get_role_permissions.sql"/>
+    <include file="/Functions/get_user_roles.sql"/>
+
+</databaseChangeLog>

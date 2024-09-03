@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Auth.PL</name>
+    </assembly>
+    <members>
+        <member name="M:Auth.PL.Controllers.AdminController.CreateRoleAsync(Auth.Entities.Roles.RoleRequest)">
+            <summary>
+            Создание роли в системе
+            </summary>
+            <param name="roleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.UpdateRoleAsync(Auth.Entities.Roles.RoleResponse)">
+            <summary>
+            Изменение названия роли в системе
+            </summary>
+            <param name="roleResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.DeleteRoleAsync(System.Int32)">
+            <summary>
+            Удаление роли из системы
+            </summary>
+            <remarks>
+             Каскадное удаление роли, также удалит данную роль у всех пользователей системы и
+             сопоставление "роль - разрешения"
+            </remarks>
+            <param name="id">Идентификатор роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.GetAllRolesAsync">
+            <summary>
+            Все роли существующие в системе
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.CreatePermissionAsync(Auth.Entities.Permissions.PermissionRequest)">
+            <summary>
+            Создание разрешения в системе 
+            </summary>
+            <remarks>
+            Идентификатор разрешения должен совпадать с перечислением в enum Permission 
+            </remarks>
+            <param name="permissionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.UpdatePermissionAsync(Auth.Entities.Permissions.PermissionResponse)">
+            <summary>
+            Изменение названия разрешения
+            </summary>
+            <param name="permissionResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.DeletePermission(System.Int32)">
+            <summary>
+            Удаление разрешения 
+            </summary>
+            <remarks>
+            Каскадное удаление разрешения. Также удалиться сопоставление "роли-разрешение"
+            </remarks>
+            <param name="id">Идентификатор разрешения</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.GetAllPermissionsAsync">
+            <summary>
+            Возвращает все разрешения в системе
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.CreateRolePermissionAsync(Auth.Entities.Roles.RolePermissionRequest)">
+            <summary>
+            Создание связи "роль - разрешение"
+            </summary>
+            <param name="rolePermissionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.DeleteRolePermissionAsync(Auth.Entities.Roles.RolePermissionRequest)">
+            <summary>
+            Удаление связи "роль - разрешение"
+            </summary>
+            <param name="rolePermissionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.AdminController.GetRolePermissionsAsync(System.Int32)">
+            <summary>
+            Отображаются все разрешения для роли
+            </summary>
+            <param name="id">Идентификатор роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.UserController.LoginAsync(Auth.Entities.Users.UserLogin)">
+            <summary>
+            Вход пользователя в систему
+            </summary>
+            <remarks>
+            Пример по документации контроллеров
+            </remarks>
+            <param name="login">Логин пользователя</param>
+            <param name="password">Пароль пользователя</param>
+            <returns>Возваращает cookie с токеном</returns>
+            <response code="200">Успешное выполнение</response>
+            <response code="400">Ошибка API</response>
+        </member>
+        <member name="M:Auth.PL.Controllers.UserController.GetAsync">
+            <summary>
+            Запросить всех пользователей
+            </summary>
+        </member>
+        <member name="M:Auth.PL.Controllers.UserController.GetAsync(System.Guid)">
+            <summary>
+            Запрос пользователя по ID
+            </summary>
+        </member>
+        <member name="M:Auth.PL.Controllers.UserController.UpdateAsync(System.Guid,Auth.Entities.Users.UserRequest)">
+            <summary>
+            Изменение данных пользователя
+            </summary>
+        </member>
+        <member name="M:Auth.PL.Controllers.UserController.CreateAsync(Auth.Entities.Users.UserRequest)">
+            <summary>
+            Создание пользователя
+            </summary>
+        </member>
+        <member name="M:Auth.PL.Controllers.UserController.DeleteAsync(System.Guid)">
+            <summary>
+            Удаление пользователя
+            </summary>
+        </member>
+        <member name="M:Auth.PL.Controllers.UserController.CreateRolePermissionAsync(Auth.Entities.Users.UserRoleRequest)">
+            <summary>
+            Назначение пользователю роли
+            </summary>
+            <param name="userRoleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.UserController.DeleteRolePermissionAsync(Auth.Entities.Users.UserRoleRequest)">
+            <summary>
+            Удаление роли у пользователя
+            </summary>
+            <param name="userRoleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth.PL.Controllers.UserController.GetUserRolesAsync(System.Guid)">
+            <summary>
+            Возвращает все роли назначенные пользователю
+            </summary>
+            <param name="id">Ид пользователя</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
