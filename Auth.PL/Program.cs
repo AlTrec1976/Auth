@@ -1,4 +1,4 @@
-using Auth.BLL.Logic.Profiles;
+using Auth.Helpers.Profiles;
 using Auth.DI;
 using Auth.Entities.Auth;
 using AutoMapper;
