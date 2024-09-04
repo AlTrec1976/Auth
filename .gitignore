@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+/Auth.PL/appsettings.json
+/Auth.PL/appsettings.Development.json
+/db/.idea
+/db/liquibase.properties
+/db/.vs
